@@ -1,0 +1,960 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Api
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Api
+   ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SubterfugeCore.Core.Network.Api">
+  
+  
+  <h1 id="SubterfugeCore_Core_Network_Api" data-uid="SubterfugeCore.Core.Network.Api" class="text-break">Class Api
+  </h1>
+  <div class="markdown level0 summary"><p>API class to communicate with the backend API</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Api</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SubterfugeCore.Core.Network.html">SubterfugeCore.Core.Network</a></h6>
+  <h6><strong>Assembly</strong>: SubterfugeCore.dll</h6>
+  <h5 id="SubterfugeCore_Core_Network_Api_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Api : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api__ctor_" data-uid="SubterfugeCore.Core.Network.Api.#ctor*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api__ctor" data-uid="SubterfugeCore.Core.Network.Api.#ctor">Api()</h4>
+  <div class="markdown level1 summary"><p>Default constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Api()</code></pre>
+  </div>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api__ctor_" data-uid="SubterfugeCore.Core.Network.Api.#ctor*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api__ctor_System_String_" data-uid="SubterfugeCore.Core.Network.Api.#ctor(System.String)">Api(String)</h4>
+  <div class="markdown level1 summary"><p>Constructor that allows overriding the Api's URL</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Api(string url)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>The base URL to send requests to. This should point to the <code>exec_event.php</code> file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api_Url_" data-uid="SubterfugeCore.Core.Network.Api.Url*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api_Url" data-uid="SubterfugeCore.Core.Network.Api.Url">Url</h4>
+  <div class="markdown level1 summary"><p>The API URL. The default value is set to &quot;http://localhost&quot;.
+You can override this URL by calling the API constuctor and passing in the URL manually.
+This URL should NOT include a trailing slash.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Url { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api_BlockPlayer_" data-uid="SubterfugeCore.Core.Network.Api.BlockPlayer*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api_BlockPlayer_SubterfugeCore_Core_Players_Player_" data-uid="SubterfugeCore.Core.Network.Api.BlockPlayer(SubterfugeCore.Core.Players.Player)">BlockPlayer(Player)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;NetworkResponse&lt;BlockPlayerResponse&gt;&gt; BlockPlayer(Player player)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SubterfugeCore.Core.Players.Player.html">Player</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SubterfugeCore.Core.Network.NetworkResponse-1.html">NetworkResponse</a>&lt;<a class="xref" href="SubterfugeCore.Core.Network.BlockPlayerResponse.html">BlockPlayerResponse</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api_CreateGroup_" data-uid="SubterfugeCore.Core.Network.Api.CreateGroup*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api_CreateGroup_System_Int32_List_SubterfugeCore_Core_Players_Player__" data-uid="SubterfugeCore.Core.Network.Api.CreateGroup(System.Int32,List{SubterfugeCore.Core.Players.Player})">CreateGroup(Int32, List&lt;Player&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;NetworkResponse&lt;CreateGroupResponse&gt;&gt; CreateGroup(int gameRoom, List&lt;Player&gt; players)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">gameRoom</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="SubterfugeCore.Core.Players.Player.html">Player</a>&gt;</td>
+        <td><span class="parametername">players</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SubterfugeCore.Core.Network.NetworkResponse-1.html">NetworkResponse</a>&lt;<a class="xref" href="SubterfugeCore.Core.Network.CreateGroupResponse.html">CreateGroupResponse</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api_CreateLobby_" data-uid="SubterfugeCore.Core.Network.Api.CreateLobby*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api_CreateLobby_System_String_System_Int32_System_Int32_System_Boolean_System_Boolean_System_String_System_Int32_" data-uid="SubterfugeCore.Core.Network.Api.CreateLobby(System.String,System.Int32,System.Int32,System.Boolean,System.Boolean,System.String,System.Int32)">CreateLobby(String, Int32, Int32, Boolean, Boolean, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a new game lobby</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;NetworkResponse&lt;CreateLobbyResponse&gt;&gt; CreateLobby(string title, int maxPlayers, int minRating, bool rated, bool anonymous, string goal, int map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>The title of the lobby</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxPlayers</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minRating</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">rated</span></td>
+        <td><p>If the game is a ranked game</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">anonymous</span></td>
+        <td><p>If the game is anonymous</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">goal</span></td>
+        <td><p>The goal of the game</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">map</span></td>
+        <td><p>The map that the game is played on</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SubterfugeCore.Core.Network.NetworkResponse-1.html">NetworkResponse</a>&lt;<a class="xref" href="SubterfugeCore.Core.Network.CreateLobbyResponse.html">CreateLobbyResponse</a>&gt;&gt;</td>
+        <td><p>the CreateLobbyResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api_GetBlockList_" data-uid="SubterfugeCore.Core.Network.Api.GetBlockList*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api_GetBlockList" data-uid="SubterfugeCore.Core.Network.Api.GetBlockList">GetBlockList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;NetworkResponse&lt;BlockPlayerResponse&gt;&gt; GetBlockList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SubterfugeCore.Core.Network.NetworkResponse-1.html">NetworkResponse</a>&lt;<a class="xref" href="SubterfugeCore.Core.Network.BlockPlayerResponse.html">BlockPlayerResponse</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api_GetGameEvents_" data-uid="SubterfugeCore.Core.Network.Api.GetGameEvents*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api_GetGameEvents_System_Int32_" data-uid="SubterfugeCore.Core.Network.Api.GetGameEvents(System.Int32)">GetGameEvents(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a list of all of the GameEvents for the specified gameroom</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;NetworkResponse&lt;GameEventResponse&gt;&gt; GetGameEvents(int gameRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">gameRoom</span></td>
+        <td><p>The id of the game room to fetch events for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SubterfugeCore.Core.Network.NetworkResponse-1.html">NetworkResponse</a>&lt;<a class="xref" href="SubterfugeCore.Core.Network.GameEventResponse.html">GameEventResponse</a>&gt;&gt;</td>
+        <td><p>A list of game events</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api_GetGroupMessages_" data-uid="SubterfugeCore.Core.Network.Api.GetGroupMessages*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api_GetGroupMessages_System_Int32_System_Int32_" data-uid="SubterfugeCore.Core.Network.Api.GetGroupMessages(System.Int32,System.Int32)">GetGroupMessages(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;NetworkResponse&lt;GroupMessageListResponse&gt;&gt; GetGroupMessages(int gameRoom, int GroupNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">gameRoom</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">GroupNumber</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SubterfugeCore.Core.Network.NetworkResponse-1.html">NetworkResponse</a>&lt;<a class="xref" href="SubterfugeCore.Core.Network.GroupMessageListResponse.html">GroupMessageListResponse</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api_GetOngoingRooms_" data-uid="SubterfugeCore.Core.Network.Api.GetOngoingRooms*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api_GetOngoingRooms" data-uid="SubterfugeCore.Core.Network.Api.GetOngoingRooms">GetOngoingRooms()</h4>
+  <div class="markdown level1 summary"><p>Gets a list of all ongoing rooms that the user is a member of</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;NetworkResponse&lt;GameRoomResponse&gt;&gt; GetOngoingRooms()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SubterfugeCore.Core.Network.NetworkResponse-1.html">NetworkResponse</a>&lt;<a class="xref" href="SubterfugeCore.Core.Network.GameRoomResponse.html">GameRoomResponse</a>&gt;&gt;</td>
+        <td><p>A list of ongoing game rooms</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api_GetOpenRooms_" data-uid="SubterfugeCore.Core.Network.Api.GetOpenRooms*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api_GetOpenRooms" data-uid="SubterfugeCore.Core.Network.Api.GetOpenRooms">GetOpenRooms()</h4>
+  <div class="markdown level1 summary"><p>Gets a list of all open game rooms</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;NetworkResponse&lt;GameRoomResponse&gt;&gt; GetOpenRooms()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SubterfugeCore.Core.Network.NetworkResponse-1.html">NetworkResponse</a>&lt;<a class="xref" href="SubterfugeCore.Core.Network.GameRoomResponse.html">GameRoomResponse</a>&gt;&gt;</td>
+        <td><p>A list of open game rooms</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api_JoinLobby_" data-uid="SubterfugeCore.Core.Network.Api.JoinLobby*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api_JoinLobby_System_Int32_" data-uid="SubterfugeCore.Core.Network.Api.JoinLobby(System.Int32)">JoinLobby(Int32)</h4>
+  <div class="markdown level1 summary"><p>Join a game room</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;NetworkResponse&lt;JoinLobbyResponse&gt;&gt; JoinLobby(int roomId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roomId</span></td>
+        <td><p>The room id of the game to join</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SubterfugeCore.Core.Network.NetworkResponse-1.html">NetworkResponse</a>&lt;<a class="xref" href="SubterfugeCore.Core.Network.JoinLobbyResponse.html">JoinLobbyResponse</a>&gt;&gt;</td>
+        <td><p>The JoinLobbyResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api_LeaveLobby_" data-uid="SubterfugeCore.Core.Network.Api.LeaveLobby*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api_LeaveLobby_System_Int32_" data-uid="SubterfugeCore.Core.Network.Api.LeaveLobby(System.Int32)">LeaveLobby(Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes the player from the specified game lobby</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;NetworkResponse&lt;LeaveLobbyResponse&gt;&gt; LeaveLobby(int roomId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roomId</span></td>
+        <td><p>The room id to remove the player from</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SubterfugeCore.Core.Network.NetworkResponse-1.html">NetworkResponse</a>&lt;<a class="xref" href="SubterfugeCore.Core.Network.LeaveLobbyResponse.html">LeaveLobbyResponse</a>&gt;&gt;</td>
+        <td><p>The LeaveLobbyResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api_Login_" data-uid="SubterfugeCore.Core.Network.Api.Login*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api_Login_System_String_System_String_" data-uid="SubterfugeCore.Core.Network.Api.Login(System.String,System.String)">Login(String, String)</h4>
+  <div class="markdown level1 summary"><p>Logs the user into the API. If successful, stores the user's session token
+in the Api object so that future requests don't need to accept the token.
+Note: creating a <code>new Api()</code> instance will have the user's token persist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;NetworkResponse&lt;LoginResponse&gt;&gt; Login(string username, string password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">username</span></td>
+        <td><p>The user's username</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>The user's password</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SubterfugeCore.Core.Network.NetworkResponse-1.html">NetworkResponse</a>&lt;<a class="xref" href="SubterfugeCore.Core.Network.LoginResponse.html">LoginResponse</a>&gt;&gt;</td>
+        <td><p>The login response</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api_RegisterAccount_" data-uid="SubterfugeCore.Core.Network.Api.RegisterAccount*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api_RegisterAccount_System_String_System_String_System_String_" data-uid="SubterfugeCore.Core.Network.Api.RegisterAccount(System.String,System.String,System.String)">RegisterAccount(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Register a new account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;NetworkResponse&lt;RegisterResponse&gt;&gt; RegisterAccount(string username, string password, string email)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">username</span></td>
+        <td><p>The username to register</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>The password to register</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">email</span></td>
+        <td><p>The email address to register</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SubterfugeCore.Core.Network.NetworkResponse-1.html">NetworkResponse</a>&lt;<a class="xref" href="SubterfugeCore.Core.Network.RegisterResponse.html">RegisterResponse</a>&gt;&gt;</td>
+        <td><p>The RegisterResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api_SendMessage_" data-uid="SubterfugeCore.Core.Network.Api.SendMessage*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api_SendMessage_System_Int32_System_Int32_System_String_" data-uid="SubterfugeCore.Core.Network.Api.SendMessage(System.Int32,System.Int32,System.String)">SendMessage(Int32, Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;NetworkResponse&lt;SendMessageResponse&gt;&gt; SendMessage(int gameRoom, int groupId, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">gameRoom</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">groupId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SubterfugeCore.Core.Network.NetworkResponse-1.html">NetworkResponse</a>&lt;<a class="xref" href="SubterfugeCore.Core.Network.SendMessageResponse.html">SendMessageResponse</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api_SetToken_" data-uid="SubterfugeCore.Core.Network.Api.SetToken*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api_SetToken_System_String_" data-uid="SubterfugeCore.Core.Network.Api.SetToken(System.String)">SetToken(String)</h4>
+  <div class="markdown level1 summary"><p>If the user has already logged and you are creating a new instance of the Api, this method allows
+setting the user's token for future requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetToken(string token)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">token</span></td>
+        <td><p>The user's session token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api_StartLobbyEarly_" data-uid="SubterfugeCore.Core.Network.Api.StartLobbyEarly*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api_StartLobbyEarly_System_Int32_" data-uid="SubterfugeCore.Core.Network.Api.StartLobbyEarly(System.Int32)">StartLobbyEarly(Int32)</h4>
+  <div class="markdown level1 summary"><p>Starts a game early if the room's capacity is not filled.
+This action can only be performed by the creator of the lobby.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;NetworkResponse&lt;StartLobbyEarlyResponse&gt;&gt; StartLobbyEarly(int roomId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roomId</span></td>
+        <td><p>The room id to start early.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SubterfugeCore.Core.Network.NetworkResponse-1.html">NetworkResponse</a>&lt;<a class="xref" href="SubterfugeCore.Core.Network.StartLobbyEarlyResponse.html">StartLobbyEarlyResponse</a>&gt;&gt;</td>
+        <td><p>the StartLobbyEarlyResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api_SubmitGameEvent_" data-uid="SubterfugeCore.Core.Network.Api.SubmitGameEvent*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api_SubmitGameEvent_SubterfugeCore_Core_GameEvents_Base_GameEvent_System_Int32_" data-uid="SubterfugeCore.Core.Network.Api.SubmitGameEvent(SubterfugeCore.Core.GameEvents.Base.GameEvent,System.Int32)">SubmitGameEvent(GameEvent, Int32)</h4>
+  <div class="markdown level1 summary"><p>Submits a game event to the a game room. Note: The player must be in the game room
+to be able to submit an event to it and the GameEvent must be a valid game event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;NetworkResponse&lt;SubmitEventResponse&gt;&gt; SubmitGameEvent(GameEvent gameEvent, int gameRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SubterfugeCore.Core.GameEvents.Base.GameEvent.html">GameEvent</a></td>
+        <td><span class="parametername">gameEvent</span></td>
+        <td><p>The GameEvent to submit to the server</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">gameRoom</span></td>
+        <td><p>The id of the game room to submit an event to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SubterfugeCore.Core.Network.NetworkResponse-1.html">NetworkResponse</a>&lt;<a class="xref" href="SubterfugeCore.Core.Network.SubmitEventResponse.html">SubmitEventResponse</a>&gt;&gt;</td>
+        <td><p>The SubmitEventResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SubterfugeCore_Core_Network_Api_UnblockPlayer_" data-uid="SubterfugeCore.Core.Network.Api.UnblockPlayer*"></a>
+  <h4 id="SubterfugeCore_Core_Network_Api_UnblockPlayer_System_Int32_" data-uid="SubterfugeCore.Core.Network.Api.UnblockPlayer(System.Int32)">UnblockPlayer(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;NetworkResponse&lt;UnblockPlayerResponse&gt;&gt; UnblockPlayer(int BlockId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">BlockId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SubterfugeCore.Core.Network.NetworkResponse-1.html">NetworkResponse</a>&lt;<a class="xref" href="SubterfugeCore.Core.Network.UnblockPlayerResponse.html">UnblockPlayerResponse</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
